@@ -2,7 +2,7 @@
 e34a3a soft red
 #102536 dark background
 #02579a blue
-#81ebfb light blue
+black light blue
 */
 
 /* GENERALITIES */
@@ -14,8 +14,8 @@ e34a3a soft red
 	font-size: 13px;
 	left: 0;
 	margin-top: -11px;
-	color: white;
-	text-shadow: 0 0 2px #81ebfb;
+	color: black;
+	text-shadow: 0 0 2px white;
 }
 .sheet-flexwidth:not(:checked) + .sheet-container {
 	width: 882px;
@@ -65,12 +65,12 @@ textarea {
 li,
 li input[type=text],
 li .sheet-auto-expand {
-	color: white;
-	text-shadow: 0 0 2px #81ebfb;
+	color: black;
+	text-shadow: 0 0 2px white;
 	position: relative;
 }
 li::after {
-	background: #81ebfb;
+	background: black;
 	transform: rotate(45deg);
 	content: '';
 	display: block;
@@ -111,11 +111,12 @@ input[type=checkbox] + span, input[type=radio] + span {
 	height: 1px;
 }
 .sheet-tab {
-	background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Scum%20-%20Villainy/Assets/background.png");
 	padding: 5px 10px 15px;
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	background-color: #E8E8E8;
+	/*background-image: url("https://github.com/Jabberer/Constellations-On-The-Court/blob/master/Haiku/assets/background.jpg?raw=true");*/
 }
 .sheet-type-input:not([value="character"]) ~ .sheet-type-character,
 .sheet-type-input:not([value="ship"]) ~ .sheet-type-ship,
@@ -158,7 +159,7 @@ span.sheet-type-selector {
 	border: solid 1px black;
 	text-align: center;
 	background: #102536;
-	color: #81ebfb;
+	color: black;
 	text-shadow: none !important;
 	width: 170px;
 	height: 20px;
@@ -169,7 +170,7 @@ span.sheet-type-selector {
 	font-weight: 600;
 }
 input.sheet-type-selector:hover ~ span {
-	color: white;
+	color: black;
 }
 input.sheet-type-selector[value="character"]:checked ~ span::before {
 	content: "Character Mode";
@@ -192,18 +193,18 @@ input.sheet-type-selector[value="faction"]:checked ~ span::before {
 	margin-left: calc(100% - 392px);
 	margin-top: 2px;
 	width: 380px;
-	border: 1px solid #81ebfb;
+	border: 1px solid black;
 	background-color: #102536;
 	font-size: .8em;
-	color: #81ebfb;
-	text-shadow: 0 0 1px white;
+	color: white;
+	text-shadow: 0 0 1px black;
 	z-index: 100;
 	padding: 4px;
 	border-radius: 5px;
 }
 .sheet-settings > div {
 	padding: 3px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid black;
 	display: flex;
 	align-items: center;
 }
@@ -217,7 +218,7 @@ input.sheet-type-selector[value="faction"]:checked ~ span::before {
 .sheet-settings input[type=number],
 .sheet-settings input[type=text] {
 	border: 1px solid lightgray;
-	color: #81ebfb;
+	color: black;
 	height: 18px;
 	background: transparent;
 	padding: 0 2px;
@@ -236,7 +237,7 @@ input.sheet-type-selector[value="faction"]:checked ~ span::before {
 	margin: 0 4px 0 0;
 	padding: 0;
 	height: 18px;
-	color: #81ebfb;
+	color: black;
 	background: transparent;
 }
 
@@ -259,10 +260,12 @@ input.sheet-type-selector[value="faction"]:checked ~ span::before {
 	letter-spacing: 1px;
 	line-height: 16px;
 	padding-left: 5px;
+	color: white;
 	background-color: #102536;
 }
 .sheet-specialheader, input.sheet-specialheader {
 	background-color: #102536;
+	color: white;
 	line-height: 20px;
 	font-size: .8em;
 	letter-spacing: 1px;
@@ -379,7 +382,7 @@ input.sheet-type-selector[value="faction"]:checked ~ span::before {
 }
 .sheet-auto-expand span {
 	visibility: hidden;
-	white-space: pre-wrap;
+	black-space: pre-wrap;
 	display: block;
 	font: inherit;
 }
@@ -517,7 +520,7 @@ textarea.sheet-label {
 	height: 2px;
 	flex-shrink: 0;
 	margin: 8px 0 0 -3px;
-	background: white;
+	background: black;
 }
 .sheet-item .sheet-checkbox,
 .sheet-item .sheet-checkbox + span {
@@ -539,10 +542,10 @@ textarea.sheet-label {
 	margin-left: auto;
 	height: 18px;
 	padding: 0;
-	color: white;
+	color: black;
 	text-align: right;
 	width: 2.5em;
-	border: 1px solid white;
+	border: 1px solid black;
 	background: transparent;
 }
 .sheet-numboxes-chooser label {
@@ -555,7 +558,7 @@ textarea.sheet-label {
 	line-height: 12px;
 }
 .sheet-numboxes-chooser input:checked + span {
-	color: #81ebfb;
+	color: black;
 	text-shadow: 0 0 1px #fff;
 }
 
@@ -570,6 +573,7 @@ textarea.sheet-label {
 /* LOAD */
 .sheet-loadheader {
 	background-color: #102536;
+	color: white;
 	height: 20px;
 	line-height: 20px;
 	justify-content: space-between;
@@ -585,7 +589,7 @@ textarea.sheet-label {
 }
 .sheet-load input.sheet-checkbox + span {
 	transform: rotate(45deg);
-	border-color: #81ebfb;
+	border-color: black;
 	width: 8px;
 	height: 8px;
 	margin: 0;
@@ -667,7 +671,7 @@ input.sheet-playbook-title {
 	width: 58%;
 	margin-right: 2%;
 	font-size: 2.7em;
-	color: #81ebfb;
+	color: black;
 	text-shadow: 0 0 2px white;
 	padding: 0 0 0 5px;
 	font-weight: 200;
@@ -679,7 +683,7 @@ input.sheet-playbook-title {
 	font-size: .8em;
 	font-weight: 800;
 	letter-spacing: 1px;
-	color: #81ebfb;
+	color: black;
 	text-shadow: 0 0 2px white;
 	resize: none;
 	line-height: 15px;
@@ -687,7 +691,7 @@ input.sheet-playbook-title {
 }
 .sheet-reminder {
 	position: absolute;
-	border: 1px solid #81ebfb;
+	border: 1px solid black;
 	background: #102536;
 	top: 48px;
 	z-index: 3;
@@ -711,7 +715,7 @@ input.sheet-playbook-title {
 	min-height: 22px;
 	padding: 3px 0 0;
 	margin: 3px 0 0;
-	color: #81ebfb;
+	color: black;
 	text-shadow: 0 0 2px white;
 }
 .sheet-header .sheet-col55 {
@@ -750,8 +754,8 @@ input.sheet-playbook-title {
 
 /* CLOCKS */
 .sheet-clock input.sheet-label {
-	color: white;
-	text-shadow: 0 0 2px #81ebfb;
+	color: black;
+	text-shadow: 0 0 2px white;
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	font-weight: 600;
@@ -920,6 +924,7 @@ input[value="12"]:checked ~ .sheet-12clock,
 .sheet-recovery,
 .sheet-clock {
 	background-color: #102536;
+	color: white;
 	font-style: italic;
 	font-size: .8em;
 	line-height: 1;
@@ -951,7 +956,7 @@ input[value="12"]:checked ~ .sheet-12clock,
 	text-shadow: 0 0 2px red;
 }
 .sheet-ship-size .sheet-text-button input:checked + span {
-	color: #81ebfb;
+	color: black;
 	text-shadow: 0 0 2px white;
 }
 
@@ -977,7 +982,7 @@ input.sheet-text-input:checked + span {
 }
 input.sheet-text-input:not(.sheet-last) + span::after {
 	content: "—";
-	color: white;
+	color: black;
 	padding: 0 2px;
 }
 
@@ -1018,7 +1023,7 @@ input.sheet-tooth:checked ~ input.sheet-modtooth + span,
 input.sheet-tooth:checked ~ input.sheet-moddamagetooth + span,
 input.sheet-tooth:checked ~ input.sheet-regulartooth + span,
 input.sheet-checktooth + span {
-	background-color: #102536;
+	background-color: white;
 }
 input.sheet-xptooth + span,
 input.sheet-skiptooth + span,
@@ -1026,12 +1031,12 @@ input.sheet-moddamagetooth + span,
 input.sheet-modtooth + span,
 input.sheet-checktooth + span,
 input.sheet-tooth:checked ~ input.sheet-regulartooth + span {
-	border: 1px solid white;
+	border: 1px solid black;
 }
 input.sheet-xptooth + span,
 input.sheet-modtooth + span,
 input.sheet-checktooth:checked + span {
-	background-color: #81ebfb;
+	background-color: black;
 }
 input.sheet-regulartooth[type=radio] + span {
 	background-color: #e34a3a;
@@ -1056,7 +1061,7 @@ input.sheet-zero + span {
 	box-sizing: border-box;
 	vertical-align: top;
 	border: 1px solid black;
-	background: white;
+	background: black;
 	border-radius: 50%;
 	position: relative;
 }
@@ -1111,11 +1116,11 @@ input.sheet-regulartooth {
 	margin-top: 4px;
 	border-width: 5px 0 5px 10px;
 	border-left-color: #102536;
-	filter: drop-shadow(0 0 2px white);
+	filter: drop-shadow(0 0 2px black);
 }
 .sheet-specialability input.sheet-triangle:checked + span {
-	border-left-color: #81ebfb;
-	filter: drop-shadow(0 0 2px white);
+	border-left-color: black;
+	filter: drop-shadow(0 0 2px black);
 }
 
 /* HARM AND RECOVERY */
@@ -1168,6 +1173,7 @@ input.sheet-regulartooth {
 	padding: 0 4px 0 8px;
 	height: 21px;
 	background-color: #102536;
+	color: white;
 	font-size: .9em;
 	font-weight: 800;
 	line-height: 21px;
@@ -1260,8 +1266,8 @@ input.sheet-radiobox:hover + span {
 	opacity: 0.7;
 }
 .sheet-creds input.sheet-radiobox + span {
-	background-color: #81ebfb;
-	border: 1px solid white;
+	background-color: black;
+	border: 1px solid black;
 	margin-right: auto;
 }
 .sheet-creds input:checked ~ input.sheet-radiobox + span {
@@ -1271,12 +1277,12 @@ input.sheet-radiobox:hover + span {
 	border: 1px solid #c6c7c9;
 }
 .sheet-stash input.sheet-radiobox + span {
-	background-color: #81ebfb;
+	background-color: black;
 	border: 1px solid transparent;
 }
 .sheet-stash input:checked ~ input.sheet-radiobox + span {
 	background-color: transparent;
-	border: 1px solid white;
+	border: 1px solid black;
 }
 .sheet-stash input.sheet-radiobox.sheet-endbox {
 	margin-left: 5px;
@@ -1288,18 +1294,18 @@ input.sheet-radiobox:hover + span {
 	width: 10px;
 	height: 10px;
 	margin-right: 0;
-	border: 1px solid white;
+	border: 1px solid black;
 }
 .sheet-debt input.sheet-radiobox + span {
 	background-color: #e34a3a;
-	border: 1px solid white;
+	border: 1px solid black;
 	width: 10px;
 	height: 10px;
 	margin-right: auto;
 }
 .sheet-debt input:checked ~ input.sheet-radiobox + span {
 	background-color: transparent;
-	border: 1px solid white;
+	border: 1px solid black;
 }
 .sheet-gambits input.sheet-radiobox + span {
 	transform: scale(0.7) rotate(45deg);
@@ -1313,13 +1319,15 @@ input.sheet-radiobox:hover + span {
 .sheet-bonusdie .sheet-label {
 	font-size: .9em;
 	font-weight: 800;
-	color: #81ebfb;
+	color: black;
 	text-shadow: 0 0 2px white;
 	padding: 2px 0;
 }
 .sheet-bonusdie .sheet-bonusdieplus {
 	width: 10%;
 	background-color: #102536;
+	color: white;
+
 	font-weight: 800;
 }
 .sheet-bonusdie .sheet-bonusdietext {
@@ -1342,8 +1350,8 @@ input.sheet-radiobox:hover + span {
 	padding: 6px;
 	background-image: none;
 	background-color: transparent;
-	color: #81ebfb;
-	text-shadow: 0 0 1px white;
+	color: black;
+	text-shadow: 0 0 1px black;
 	border-radius: 0;
 	border-color: initial;
 	transition: all 0.2s;
@@ -1353,9 +1361,9 @@ input.sheet-radiobox:hover + span {
 	font-weight: 800;
 }
 .repcontrol .btn:hover {
-	color: white;
+	color: black;
 }
-.sheet-white-repcontrol .repcontrol .btn {
+.sheet-black-repcontrol .repcontrol .btn {
 	font-weight: 600;
 	margin-top: 8px;
 	font-size: .9em;
@@ -1386,7 +1394,7 @@ input.sheet-radiobox:hover + span {
 	width: 53px;
 }
 .sheet-stress2 {
-	width: 80%;
+	padding-left: 10px;
 	position: relative;
 }
 .sheet-stress3, .sheet-heat3 {
@@ -1417,7 +1425,6 @@ input.sheet-radiobox:hover + span {
 .sheet-heat2 input.sheet-zero, .sheet-heat2 input.sheet-zero + span {
 	position: absolute;
 	top: 16px;
-	left: -12px;
 }
 .sheet-extra-stress:checked ~ .sheet-tooth, .sheet-extra-stress:checked ~ .sheet-tooth + span {
 	display: none;
@@ -1427,9 +1434,9 @@ input.sheet-radiobox:hover + span {
 .sheet-notes {
 	margin-top: 20px;
 	margin-left: 10px;
-	color: #81ebfb;
+	color: white;
 	text-shadow: 0 0 2px white;
-	box-shadow: 0 0 2px white;
+	box-shadow: 0 0 2px black;
 	background-color: #102536;
 	font-size: 1.5em;
 	width: 95%;
@@ -1464,20 +1471,20 @@ button[type=roll].sheet-crewbutton {
 	text-shadow: inherit;
 }
 button[type=roll].sheet-attributebutton {
-	color: white;
-	text-shadow: 0 0 2px #81ebfb;
+	color: black;
+	text-shadow: 0 0 2px white;
 }
 button[type=roll].sheet-actionbutton {
 	letter-spacing: 1px;
-	color: #81ebfb;
-	text-shadow: 0 0 1px white;
+	color: black;
+	text-shadow: 0 0 1px black;
 	width: 86px;
 	margin-left: 8px;
 }
 .sheet-specialactionbutton {
 letter-spacing: 1px;
-color: #81ebfb;
-text-shadow: 0 0 1px white;
+color: black;
+text-shadow: 0 0 1px black;
 width: 86px;
 margin-left: 8px;
 text-transform: uppercase;
@@ -1491,7 +1498,7 @@ cursor:pointer;
 }
 button[type=roll].sheet-vicebutton,
 button[type=roll].sheet-fortunebutton {
-	color: #81ebfb;
+	color: black;
 	border-color: initial;
 	padding: 4px;
 	font-size: 1em;
@@ -1510,12 +1517,12 @@ button[type=roll].sheet-fortunebutton {
 button[type=roll].sheet-actionbutton:hover,
 button[type=roll].sheet-vicebutton:hover,
 button[type=roll].sheet-fortunebutton:hover {
-	color: white;
+	color: black;
 }
 button[type=roll].sheet-crewbutton:hover,
 button[type=roll].sheet-attributebutton:hover {
-	color: #81ebfb;
-	text-shadow: 0 0 1px white;
+	color: black;
+	text-shadow: 0 0 1px black;
 }
 
 /* CHECKBOXES */
@@ -1528,7 +1535,7 @@ input.sheet-checkbox {
 input.sheet-checkbox + span {
 	width: 10px;
 	height: 10px;
-	border: 1px solid white;
+	border: 1px solid black;
 	margin: 0 2px 0 0;
 }
 input.sheet-checkbox:hover + span {
@@ -1538,7 +1545,7 @@ input.sheet-checkbox + span:last-child {
 	margin-right: 0 !important;
 }
 input.sheet-checkbox:checked + span {
-	background-color: #81ebfb;
+	background-color: black;
 }
 
 input.sheet-triangle {
@@ -1560,8 +1567,8 @@ input.sheet-triangle:hover + span {
 .sheet-item .sheet-checkbox:checked ~ .sheet-itemname,
 .sheet-friend .sheet-friendup:checked ~ .sheet-auto-expand,
 .sheet-contact .sheet-triangle:checked ~ .sheet-auto-expand {
-	color: #81ebfb;
-	text-shadow: 0 0 1px white;
+	color: black;
+	text-shadow: 0 0 1px black;
 }
 .sheet-friend .sheet-frienddown:checked ~ .sheet-auto-expand {
 	color: #e34a3a;
@@ -1590,14 +1597,14 @@ input.sheet-friendup {
 	border-top-color: #e34a4a;
 }
 .sheet-friend input.sheet-friendup:checked + span {
-	border-bottom-color:#81ebfb;
+	border-bottom-color:black;
 }
 .sheet-contact input.sheet-triangle + span {
 	border-width: 5px 0 5px 10px;
 	border-left-color: #ffffff;
 }
 .sheet-contact input.sheet-triangle:checked + span {
-	border-left-color: #81ebfb;
+	border-left-color: black;
 }
 
 /* ACTION RATINGS */
@@ -1606,6 +1613,7 @@ input.sheet-friendup {
 }
 .sheet-attribute-title {
 	height: 21px;
+	color: white;
 	background-color: #102536;
 	padding-left: 7px;
 }
@@ -1633,7 +1641,7 @@ input.sheet-friendup {
 }
 .sheet-divider {
 	margin-right: 6px;
-	background: #81ebfb;;
+	background: black;;
 	width: 1px;
 	flex-shrink: 0;
 	height: inherit;
@@ -1646,8 +1654,8 @@ input.sheet-friendup {
 .sheet-actions input.sheet-triangle.sheet-fakeradio + span {
 	border-width: 6px 0 6px 12px;
 	margin-right: 6px;
-	border-left-color: #81ebfb;
-	filter: drop-shadow(0 0 2px white);
+	border-left-color: black;
+	filter: drop-shadow(0 0 2px black);
 }
 .sheet-actions .sheet-fakeradio:checked ~ input.sheet-triangle.sheet-fakeradio + span {
 	border-left-color: #102536;
@@ -1729,7 +1737,7 @@ input.sheet-friendup {
 }
 .sheet-ship-upkeepexpo input[type=text] {
 	text-align: center;
-	color: white;
+	color: black;
 }
 .sheet-skips, .sheet-shields {
 	margin-top: 5px;
@@ -1746,7 +1754,7 @@ input.sheet-friendup {
 	font-size: .9em;
 	height: 40px;
 	margin-top: 4px;
-	color: white;
+	color: black;
 }
 .sheet-heat3 .sheet-blackheader {
 	padding-left: 10px;
@@ -1759,7 +1767,7 @@ input.sheet-friendup {
 	font-size: 2em;
 	font-weight: 600;
 	width: 60%;
-	color: #81ebfb;
+	color: black;
 }
 .sheet-factions-header {
 	height: 24px;
@@ -1768,7 +1776,7 @@ input.sheet-friendup {
 .sheet-factions-header input[type=text] {
 	font-weight: 600;
 	padding-left: 3px;
-	color: white;
+	color: black;
 }
 .sheet-factions-header span {
 	font-size: .6em;
@@ -1801,7 +1809,7 @@ input.sheet-expand:checked + span::before {
 	resize: vertical;
 	font-size: .9em;
 	height: 40px;
-	color: white;
+	color: black;
 }
 input.sheet-expand:not(:checked) ~ textarea {
 	display: none;
@@ -1813,7 +1821,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 	border-radius: 0;
 	font-size: .9em;
 	padding: 2px 1px;
-	color: #81ebfb;
+	color: black;
 }
 .sheet-faction input[type=number] {
 	background: transparent;
@@ -1845,6 +1853,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 	font-size: 1.2em;
 	font-weight: 600;
 	background-color: #102536;
+	color: white;
 	width: 100%;
 }
 .sheet-warblurb li {
@@ -1859,12 +1868,12 @@ input.sheet-expand:not(:checked) ~ textarea {
 	margin-left: auto;
 }
 .sheet-faction-generatebutton span {
-	color: #81ebfb;
+	color: black;
 	padding: 3px;
 	border: 1px solid;
 }
 .sheet-faction-generatebutton:hover span, .sheet-generatebutton:hover span {
-	color: white;
+	color: black;
 }
 .sheet-generatebutton {
 	cursor: pointer;
@@ -1895,7 +1904,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 	background-image: url("https://raw.githubusercontent.com/roll20/roll20-character-sheets/master/Scum%20-%20Villainy/Assets/rolltemplate/bg-fortune.png");
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-color: white;
+	background-color: black;
 	height: auto;
 	min-height: 250px;
 }
@@ -1933,7 +1942,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 	height: 20px;
 	padding: 32px 0 0 30px;
 	width: 237px;
-	white-space: nowrap;
+	black-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -1963,7 +1972,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 }
 .sheet-rolltemplate-bitd .sheet-roll-action .sheet-roll-name {
 	color: #96182d;
-	text-shadow: 0 0 2px black;
+	text-shadow: 0 0 2px white;
 }
 
 /* Title */
@@ -2051,7 +2060,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 }
 .sheet-rolltemplate-bitd .sheet-roll-action .sheet-roll-subtitle {
 	color: #96182d;
-	text-shadow: 0 0 2px black;
+	text-shadow: 0 0 2px white;
 }
 .sheet-rolltemplate-bitd .sheet-roll-resist .sheet-roll-subtitle,
 .sheet-rolltemplate-bitd .sheet-roll-vice .sheet-roll-subtitle {
@@ -2077,7 +2086,7 @@ input.sheet-expand:not(:checked) ~ textarea {
 
 /* Inlinerolls */
 .sheet-rolltemplate-bitd .inlinerollresult {
-	border: 0 solid white !important;
+	border: 0 solid black !important;
 	background-color: rgba(158, 100, 81, 0);
 	font-weight: normal;
 	padding-left: 0;
