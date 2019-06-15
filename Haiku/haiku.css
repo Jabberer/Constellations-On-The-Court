@@ -1122,7 +1122,7 @@ input.sheet-regulartooth {
 	filter: drop-shadow(0 0 2px black);
 }
 .sheet-specialability input.sheet-triangle:checked + span {
-	border-left-color: black;
+	border-left-color: cyan;
 	filter: drop-shadow(0 0 2px black);
 }
 
@@ -1157,8 +1157,7 @@ input.sheet-regulartooth {
 	line-height: 1.3;
 	text-align: center;
 	resize: none;
-	color: #e34a3a;
-	text-shadow: 0 0 2px red;
+	color: black;
 	text-transform: uppercase;
 }
 .sheet-recovery {
@@ -1658,7 +1657,7 @@ input.sheet-friendup {
 .sheet-actions input.sheet-triangle.sheet-fakeradio + span {
 	border-width: 6px 0 6px 12px;
 	margin-right: 6px;
-	border-left-color: black;
+	border-left-color: cyan;
 	filter: drop-shadow(0 0 2px black);
 }
 .sheet-actions .sheet-fakeradio:checked ~ input.sheet-triangle.sheet-fakeradio + span {
